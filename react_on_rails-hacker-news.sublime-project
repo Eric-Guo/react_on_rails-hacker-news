@@ -3,7 +3,7 @@
   [
     {
       "path": ".",
-      "folder_exclude_patterns": [".bundle",".idea","tmp",".capistrano","log", "public/webpack"],
+      "folder_exclude_patterns": [".bundle",".idea","tmp",".capistrano","log", "public/packs"],
       "file_exclude_patterns": ["*.sublime-workspace",".byebug_history",".DS_Store"]
     }
   ],
