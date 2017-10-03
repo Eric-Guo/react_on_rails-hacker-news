@@ -1,0 +1,12 @@
+{
+  "extends": ["standard", "standard-react"],
+  "rules": {
+    "semi": [1, "always"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
+}
