@@ -104,24 +104,14 @@ const Table = ({ list, pattern, onDismiss }) =>
     )}
   </div>
 
-class Button extends React.Component {
-  render() {
-    const {
-      onClick,
-      className = '',
-      children,
-    } = this.props;
+const Button = ({onClick, className = '', children}) =>
+  <button
+    onClick={onClick}
+    className={className}
+    type="button"
+  >
+    {children}
+  </button>
 
-    return (
-      <button
-        onClick={onClick}
-        className={className}
-        type="button"
-      >
-        {children}
-      </button>
-    );
-  }
-}
 
 export default App;
