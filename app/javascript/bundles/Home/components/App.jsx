@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const DEFAULT_QUERY = 'redux';
 const DEFAULT_PAGE = 0;
@@ -17,7 +18,7 @@ class App extends React.Component {
     this.state = {
       results: null,
       searchKey: '',
-      searchTerm: DEFAULT_QUERY,
+      searchTerm: DEFAULT_QUERY
     };
 
     this.needsToSearchTopstories = this.needsToSearchTopstories.bind(this);
@@ -154,7 +155,14 @@ const Search = ({
     <button type="submit">
       {children}
     </button>
-  </form>
+  </form>;
+
+Search.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+  children: PropTypes.string.isRequired
+};
 
 const Table = ({ list, onDismiss }) =>
   <div className="table">
@@ -182,7 +190,12 @@ const Table = ({ list, onDismiss }) =>
         </span>
       </div>
     )}
-  </div>
+  </div>;
+
+Table.propTypes = {
+  list: PropTypes.array.isRequired,
+  onDismiss: PropTypes.func.isRequired
+};
 
 const Button = ({onClick, className = '', children}) =>
   <button
@@ -191,6 +204,16 @@ const Button = ({onClick, className = '', children}) =>
     type="button"
   >
     {children}
-  </button>
+  </button>;
+
+Button.defaultProps = {
+  className: ''
+};
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+  className: PropTypes.string,
+  children: PropTypes.node
+};
 
 export default App;
