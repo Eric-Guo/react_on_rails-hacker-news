@@ -7,9 +7,12 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-on-rails": "^9.0.3"
+    "react-on-rails": "^9.0.3",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-import": "^2.7.0",
