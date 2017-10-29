@@ -20,7 +20,7 @@ gem 'uglifier'
 gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'mini_racer', platforms: :ruby
-gem 'react_on_rails', '~> 9.0.3'
+gem 'react_on_rails', '~> 10.0.1'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
